@@ -1,0 +1,22 @@
+{
+  "artists" : [
+    {"id": 1, "name": "xi", "email": "xi@xi.com", "username": "xi", "role": "artist", "password": "xi"},
+    {"id": 2, "name": "artist 2", "email": "artist2@artist2.com", "username": "artist2", "role": "artist", "password": "artist2"},
+    {"id": 3, "name": "adminn", "email": "admin@admin.com", "username": "admin", "role": "admin", "password": "admin"}
+  ],
+  "songs": [
+    {"id": 1, "artist": "xi", "title": "Freedom Dive", "filePath": "......"},
+    {"id": 2, "artist": "xi", "title": "Halcyon", "filePath": "......"},
+    {"id": 3, "artist": "xi", "title": "Parousia", "filePath": "......"},
+    {"id": 4, "artist": "xi", "title": "Ascension to Heaven", "filePath": "......"},
+    {"id": 5, "artist": "xi", "title": "Breakthrough Atmosphere", "filePath": "......"},
+    {"id": 6, "artist": "xi", "title": "Sedap Malam", "filePath": "......"},
+    {"id": 7, "artist": "artist2", "title": "artist2song", "filePath": "......"}
+  ],
+  "requests": [
+    {"id": 1, "artist": "xi", "user_id": 1},
+    {"id": 2, "artist": "artist2", "user_id": 1},
+    {"id": 3, "artist": "artist2", "user_id": 2},
+    {"id": 4, "artist": "xi", "user_id": 3}
+  ]
+}

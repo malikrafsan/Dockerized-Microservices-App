@@ -1,0 +1,80 @@
+#content {
+  padding: 0;
+  background: linear-gradient(rgb(255, 0, 0), transparent);
+  height: 100%;
+}
+
+
+.premium-artists-top-container {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.20);
+  padding: 0 2rem 1.5rem;
+}
+
+
+.premium-artists-info * {
+  background: transparent;
+}
+
+.premium-artists-info-name {
+  font-size: 3rem;
+}
+
+.premium-artists-info-bottom {
+  font-size: 0.875rem;
+}
+
+.premium-artists-bottom-container {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.45);
+  flex: 1;
+  color: #fff;
+}
+
+.artist-list-item {
+  padding: 0.5rem 1.5rem;
+  color: rgb(179,179,179);
+  border-radius: 8px;
+}
+
+.artist-list-item .artist-list-item-title {
+  color: #fff;
+  font-weight: 500;
+}
+
+.artist-list-item > * {
+  min-width: 30px;
+}
+
+.premium-artists-header-artist-list {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 6px;
+}
+
+.artist-list-item-body {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+
+.artist-list-item-clickable:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.artist-list-item-subscribe button {
+  width: 100px;
+  margin-right: 14px;
+  border-radius: 50px;
+  font-family: 'Circular Std';
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.artist-list-item-subscribe button:hover{
+  background-color: black;
+  
+  color: white;
+  border: 1px solid white;
+  transition: 0.3s;
+}

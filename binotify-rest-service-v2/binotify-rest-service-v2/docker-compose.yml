@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  db:
+    image: 'mysql'
+    ports:
+      - "9906:3306"
+    environment:
+      - ./.env
+      - MYSQL_ROOT_PASSWORD=Skinex777
+      - MYSQL_DATABASE=mysql_database
+      - MYSQL_USER=malik
+      - MYSQL_PASSWORD=Skinex777
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+  server:
+    build: .
+    ports:
+      - '8000:8000'
+    environment:
+      DATABASE_URL: 'mysql://malik:Skinex777@db:3306/mysql_database?schema=public'

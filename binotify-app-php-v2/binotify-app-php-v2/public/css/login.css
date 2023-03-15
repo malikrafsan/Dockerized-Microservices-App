@@ -1,0 +1,133 @@
+@import url('/public/css/font.css');
+
+body {
+  font-family: 'Circular Std', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: left;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: bolder;
+  text-align: center;
+}
+
+.logo {
+  width: 1.35em;
+  height: 1.35em;
+  vertical-align: bottom;
+}
+
+hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-color:rgba(0, 0, 0, 0.15);
+}
+
+.column {
+  float: left;
+}
+
+/* Left and right column */
+.column.side {
+  width: 32.5%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 35%;
+  align-self: center;
+  margin-top: 30px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 2px;
+  box-sizing: border-box;
+
+}
+
+input[type=text]:hover {
+  border: 1px solid #1FDF64;
+  transition: 0.3s;
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+input[type=password]:hover {
+  border: 1px solid #1FDF64;
+  transition: 0.3s;
+}
+
+
+input[type=submit] {
+  width: 100px;
+  background-color: #1FDF64;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  border: 1px solid #1FDF64;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #1FDF64;
+  transition: 0.3s;
+  border: 1px solid #1FDF64;
+}
+
+.login {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.reg {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.signup {
+  width: 90%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.or {
+  margin: 5px;
+  font-weight: bold;
+}

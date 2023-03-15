@@ -1,0 +1,77 @@
+#content {
+  padding: 0;
+  background: linear-gradient(rgb(255, 0, 0), transparent);
+  height: 100%;
+}
+
+.premium-songs-top-container {
+  color: #fff;
+  padding: 0 2rem 1.5rem;
+}
+
+
+.premium-songs-info * {
+  background: transparent;
+}
+
+.premium-songs-info-type {
+  font-size: 0.75rem;
+}
+
+.premium-songs-info-name {
+  font-size: 3rem;
+}
+
+.premium-songs-info-bottom {
+  font-size: 0.875rem;
+}
+
+.premium-songs-bottom-container {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  flex: 1;
+  color: #fff;
+}
+
+.song-list-item {
+  padding: 0.5rem 1.5rem;
+  color: rgb(179,179,179);
+  border-radius: 8px;
+}
+
+.song-list-item .song-list-item-title {
+  color: #fff;
+  font-weight: 500;
+}
+
+.song-list-item > * {
+  min-width: 30px;
+}
+
+.premium-songs-header-song-list {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 6px;
+}
+
+.song-list-item-body {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+
+.song-list-icon-play {
+  top: 50%;
+  right: 12px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.song-list-icon-play:hover {
+  box-shadow: 0 0 50px #ccc;
+  cursor: pointer;
+}
+
+.song-list-item-clickable:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}

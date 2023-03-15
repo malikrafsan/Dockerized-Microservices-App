@@ -1,0 +1,10 @@
+.album-list {
+  gap: 24px 16px;
+  justify-content: center;
+}
+
+.album-search-page-info {
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 0 1rem;
+}

@@ -1,0 +1,90 @@
+@import url('/public/css/font.css');
+
+body {
+  color: #bbb;
+  font-family: 'Circular std', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: bolder;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 700px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  form {
+    width: auto;
+  }
+}
+
+.form-section {
+  margin: 30px;
+}
+
+label {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+audio {
+  display: none;
+}
+
+input[type='submit'] {
+  width: fit-content;
+  background-color: #1FDF64;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  border: 1px solid #1FDF64;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: white;
+  color: #1FDF64;
+  transition: 0.3s;
+  border: 1px solid #1FDF64;
+}
+
+.form-section-submit {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}

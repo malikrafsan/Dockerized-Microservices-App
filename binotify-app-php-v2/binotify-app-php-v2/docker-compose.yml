@@ -1,0 +1,37 @@
+version: '3.3'
+services:
+  web:
+    container_name: tubes-1-soundclown
+    build: .
+    image: tubes-1:latest
+    depends_on:
+      - db
+    volumes:
+      - .:/var/www/html/
+      - ./php.ini:/usr/local/etc/php/conf.d/php.ini
+    ports:
+      - 8888:80
+  db:
+    container_name: tubes-1-db
+    image: mysql
+    restart: unless-stopped
+    volumes:
+      - ./migrations/binotify.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+    env_file:
+      - ./.env.docker
+    ports:
+      - "9907:3306"
+  phpmyadmin:
+    container_name: tubes-1-pma
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+
+
+    
+

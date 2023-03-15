@@ -1,0 +1,31 @@
+* {
+  color: #bbb;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: bolder;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 20px;
+}
+
+table {
+  margin-top: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+thead > tr > th {
+  font-size: 1.5rem;
+}
+
+tr:hover {
+  background-color: #ff6c00;
+  background-color: rgba(255, 108, 0, 0.3);
+}
+
+tr:hover > td {
+  color: white;
+}

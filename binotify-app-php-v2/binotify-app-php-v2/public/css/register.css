@@ -1,0 +1,118 @@
+@import url('/public/css/font.css');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Circular std', sans-serif;
+}
+
+.logo {
+  width: 1.35em;
+  height: 1.35em;
+  vertical-align: bottom;
+}
+
+input {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+input:hover {
+  border: 1px solid #1FDF64;
+  transition: 0.3s;
+}
+
+input[type='password'] {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+input[type='password']:hover {
+  border: 1px solid #1FDF64;
+  transition: 0.3s;
+}
+
+input[type='submit'] {
+  width: 100px;
+  background-color: #1FDF64;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  border: 1px solid #1FDF64;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: white;
+  color: #1FDF64;
+  transition: 0.3s;
+  border: 1px solid #1FDF64;
+}
+
+input[type='submit']:disabled {
+  cursor: default;
+  background-color: #ffa667;
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-extension {
+  padding: 30px;
+}
+
+.form-extension {
+  padding: 30px;
+}
+
+hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+form {
+  width: 400px;
+}
+
+.form-section {
+  padding: 10px;
+}
+
+.error {
+  font-size: small;
+}
+
+h2 {
+  font-size: 2rem;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 20px;
+}
