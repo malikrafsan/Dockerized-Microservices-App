@@ -1,8 +1,26 @@
 # Dockerized Microservices Application
 > A microservices app for listening and managing music access with multiple languages and databases
 
+Binotify application is a system that enables user Binotify to play a music and add/update/delete music as well. This app also enables the users to subscribe to artist to get access to premium songs. On separate interface, the admin can approve and manage premium songs. 
+
 ## High Level Description
 ![High Level Design](assets/high-level-design.png)
+
+1. Binotify App (PHP + PostgreSQL + HTML-CSS-JS):
+
+    This application is main interface for the regular user. This application is developed using PHP and PostgreSQL. This app enables the user to manage musics and play the musics inside the application. In addition, this app use `stale-while-revalidate` mechanism to optimize the rendering performance while sync the data with the other services.
+
+2. Binotify Premium App (ReactJS):
+
+    This application is main interface for the admin. This app enables the admin to manage the premium songs and the regular user access to premium songs by subscription. This app is developed using ReactJS and MaterialUI (MUI)
+
+3. Binotify REST Service (TypeScript + ExpressJS + Prisma):
+    
+    This REST service manages the premium songs which accessed from the React App. This service provides auth and premium songs CRUD features. This service is developed using TypeScript language and ExpressJS framework and Prisma as Database ORM.
+
+4. Binotify SOAP Service (Java + JAX-WS):
+
+    This SOAP service is a service that provide single source of truth for subscription. This service is providing interface as SOAP interface, a messaging protocol specification using XML. This service also provide callback functionality to update other services data, making sure data consistency
 
 ## Detailed Specification and Documentations
 You can find the details of app specification and the documentation for each of the app here
@@ -24,28 +42,6 @@ You can find the details of app specification and the documentation for each of 
 
 
 ## Sneak Peaks
-### React App
-1. Login Page
-![Login](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-login.png)
-
-2. Register Page
-![Register](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-register.png)
-
-3. Subscription Request Page
-![Subscription Request](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-request.png)
-
-4. Acccept Subscription Request Modal
-![Accept Subscription](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-accept.png)
-
-5. Manage Song Page
-![Manage Song](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-request.png)
-
-6. Song Creation Page
-![Create Song](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-create.png)
-
-7. Song Edit Page
-![Edit Song](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-edit.png)
-
 ### PHP App
 
 1. Home Page
@@ -74,3 +70,26 @@ You can find the details of app specification and the documentation for each of 
 ![Login](binotify-app-php-v2/binotify-app-php-v2/docs/imgs/login.png)
 13. Register Page
 ![Register](binotify-app-php-v2/binotify-app-php-v2/docs/imgs/register.png)
+
+### React App
+1. Login Page
+![Login](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-login.png)
+
+2. Register Page
+![Register](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-register.png)
+
+3. Subscription Request Page
+![Subscription Request](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-request.png)
+
+4. Acccept Subscription Request Modal
+![Accept Subscription](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-accept.png)
+
+5. Manage Song Page
+![Manage Song](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-request.png)
+
+6. Song Creation Page
+![Create Song](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-create.png)
+
+7. Song Edit Page
+![Edit Song](binotify-premium-app-v3/binotify-premium-app-v3/docs/img/binotify-edit.png)
+
